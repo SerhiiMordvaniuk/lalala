@@ -2,25 +2,25 @@ import css from "./Profile.module.css"
 
 function Profile(props ) {
     return (
-        <div>
+        <div className={css.profile}>
             <div>
-                <img src={props.image} alt={name} />
-                <p>{ props.name}</p>
-                <p>@{props.tag }</p>
-                <p>{ props.location}</p>
+                <img src={props.image} alt={name} className={css.img} />
+                <p className={css.name}>{ props.name}</p>
+                <p className={css.info}>@{props.tag }</p>
+                <p className={css.info}>{ props.location}</p>
             </div>
-            <ul>
-                <li>
+            <ul className={css.list}>
+                <li className={css.item}>
                     <span>Followers</span>
-                    <span>{ props.stats.followers}</span>
+                    <span className={css.bolt}>{ props.stats.followers}</span>
                 </li>
-                <li>
+                <li className={css.item}>
                     <span>Views</span>
-                    <span>{ props.stats.views}</span>
+                    <span className={css.bolt}>{ props.stats.views}</span>
                 </li>
-                <li>
+                <li className={css.item}>
                     <span>Likes</span>
-                    <span>{ props.stats.likes}</span>
+                    <span className={css.bolt}>{ props.stats.likes}</span>
                 </li>
             </ul>
         </div>

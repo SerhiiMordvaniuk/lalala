@@ -1,0 +1,54 @@
+.profile{
+    width: 480px;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    background-color: rgb(236, 230, 230);
+    padding-top: 20px;
+    overflow: hidden ;
+}
+
+.img{
+    width: 160px;
+    height: 160px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.item{
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid darkgray;
+}
+
+.item:not(:first-child){
+    border-left: 5px solid darkgray;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.info{
+    font-weight: 500;
+    color: grey;
+    font-size: 16px;
+    margin: 0;
+
+    &:last-child{
+        margin-bottom: 10px;
+    }
+}
+
+.bolt{
+    font-weight: 700;
+}
